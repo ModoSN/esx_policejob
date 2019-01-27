@@ -578,5 +578,6 @@ end)
 
 RegisterServerEvent('esx_policejob:message')
 AddEventHandler('esx_policejob:message', function(target, msg)
-	TriggerClientEvent('esx:showNotification', target, msg)
+	--TriggerClientEvent('esx:showNotification', target, msg)
+	TriggerClientEvent('esx:showAdvancedNotification', target, _U'emergency', msg, 'CHAR_CALL911', 0)
 end)
